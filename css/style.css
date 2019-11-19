@@ -1,4 +1,33 @@
 body {
+
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 75%;
+}
+
+
+
+h1 {
+  font-family: system-ui, sans-serif;
+  font-variant: all-small-caps;
+  font-size: 2em;
+}
+
+
+
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 991px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+.medium-pic {
+  width: 70%;
 }
