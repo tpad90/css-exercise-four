@@ -1,33 +1,103 @@
 body {
-
   background-color: #dadada;
   font-size: 75%;
 }
 
-
-
 h1 {
   font-family: system-ui, sans-serif;
   font-variant: all-small-caps;
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-
-
-@media screen and (min-width: 575px){
-   div {
-    margin: 1%;
-    width: 48%;
-  }
+h2 {
+  font-famile: system-ui, serif;
+  font-size: 1.5em;
+  margin-left:35px;
 }
 
-@media screen and (min-width: 991px){
-   div {
-    margin: 1%;
-    width: 48%;
+.container {
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
   }
+
+.cities {
+  float: left;
+  width: 99%;
+  overflow: hidden;
 }
 
 .medium-pic {
-  width: 70%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.baku, .london, .madrid, .rome {
+  position: absolute;
+}
+
+.baku {
+  top: 55px;
+}
+
+.london {
+  top: 277px;
+}
+
+.madrid {
+  top: 499px;
+}
+
+.rome {
+  top: 720px;
+}
+
+@media screen and (min-width:575px) {
+
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .cities {
+    width: 50%;
+  }
+
+  .baku, .london, .madrid, .rome {
+    position: absolute;
+  }
+
+  .baku, .london {
+    top: 55px;
+  }
+
+  .madrid, .rome {
+    top: 275px;
+  }
+
+}
+
+
+@media screen and (min-width: 991px){
+
+  .container {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .cities {
+    width: 25%;
+  }
+
+  .baku, .london, .madrid, .rome {
+    position: absolute;
+    top: 55px;
+  }
+
 }
